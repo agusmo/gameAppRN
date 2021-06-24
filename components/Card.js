@@ -1,15 +1,14 @@
 import React from "react"
 import {View, Text, StyleSheet} from "react-native"
 //React.fragment == <>
-//combino estilos de inputcomtainer con props.style
-//props son los tags dentro de card cuando renderizamos
+//combino estilos de inputcontainer con props.style
+//props son los tags dentro de card cuando renderizamos. Props.style son sus estilos.
 //children es una prop de react que referencia a todo el contenido q ue esta dentro de donde llamo a card o sea startfamescreen
 const Card = props => {
     
 return (
-    <View style={{...styles.inputCard, ...props.style}}>
+    <View style={{...styles.inputContainer, ...props.style}}>
         {props.children}
-
     </View>
 
 )
